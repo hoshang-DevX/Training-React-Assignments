@@ -1,0 +1,84 @@
+/* Style for each segment */
+.segment {
+  display: flex;
+  position: absolute;
+  background-color: grey;
+  /* transition: background-color 0.3s ease; Smooth transition for the color change */
+}
+
+/* Active state for segments */
+.segment.on {
+  background-color: red;  /* Color when the segment is on */
+}
+
+/* Inactive state for segments */
+.segment.off {
+  background-color: rgb(233, 218, 218); /* Color when the segment is off */
+}
+
+/* Display for each digit */
+.digit {
+  position: relative;
+  width: 50px; /* Width of the digit */
+  height: 100px; /* Height of the digit */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define the position of each segment inside the digit */
+.segment-display {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  width: 40px;
+  height: 8px;
+  top: 0;
+  left: 5px;
+}
+
+.middle {
+  width: 40px;
+  height: 8px;
+  top: 45%;
+  left: 5px;
+}
+
+.bottom {
+  width: 40px;
+  height: 8px;
+  bottom: 0;
+  left: 5px;
+}
+
+.top-right {
+  width: 8px;
+  height: 40px;
+  top: 5px;
+  right: 0;
+}
+
+.top-left {
+  width: 8px;
+  height: 40px;
+  top: 5px;
+  left: 0;
+}
+
+.bottom-right {
+  width: 8px;
+  height: 40px;
+  bottom: 5px;
+  right: 0;
+}
+
+.bottom-left {
+  width: 8px;
+  height: 40px;
+  bottom: 5px;
+  left: 0;
+}
